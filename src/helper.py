@@ -70,7 +70,7 @@ def llm_pipeline(file_path):
         llm= llm_ques_gen_pipeline,
         chain_type= "refine",
         question_prompt= PROMPT_QUESTIONS,
-        refine_prompt= REFINE_PROMPT_QUESTIONS
+        refine_prompt= REFINE_PROMPT_QUESTIONS,
         verbose=True)
     
     ques= chain_ques_gen.run(
